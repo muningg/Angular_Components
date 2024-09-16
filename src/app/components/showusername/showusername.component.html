@@ -1,0 +1,4 @@
+<h1>Show Username</h1>
+<input [(ngModel)]="username" placeholder="Enter your username">
+<button (click)="showUsername()">Submit</button>
+<p *ngIf="displayedUsername">{{ displayedUsername }}</p>
