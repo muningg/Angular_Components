@@ -1,0 +1,6 @@
+<h1>Simple Form </h1>
+<form (ngSubmit)="submitForm()">
+    <input [(ngModel)]="inputData" name="input" placeholder="Enter Data">
+    <button type="submit">Submit</button>
+</form>
+<p *ngIf="submitted">{{ result }}</p>
