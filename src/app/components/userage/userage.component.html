@@ -1,0 +1,4 @@
+<h1> Enter Your Birth Year</h1>
+<input [(ngModel)]="birthYear" placeholder="Enter your birth year">
+<button (click)="calculateAge()">Submit</button>
+<p *ngIf="age">{{ age }}</p>
