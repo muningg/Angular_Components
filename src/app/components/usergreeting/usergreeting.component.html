@@ -1,0 +1,4 @@
+<h1>User Greeting</h1>
+<input [(ngModel)]="name" placeholder="Enter your name">
+<button (click)="greetUser()">Submit</button>
+<p *ngIf="greeting">{{ greeting }}</p>
