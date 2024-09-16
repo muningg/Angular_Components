@@ -1,0 +1,8 @@
+<p>fibonaccigenerator works!</p>
+<div>
+    <input type="number" [(ngModel)]="n" placeholder="Number of terms" />
+    <button (click)="generateFibonacci()">Generate Fibonacci</button>
+    <ul>
+      <li *ngFor="let number of fibonacciNumbers">{{ number }}</li>
+    </ul>
+  </div>
