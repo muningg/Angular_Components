@@ -1,0 +1,4 @@
+<p>charactercounter works!</p>
+<input [(ngModel)]="text" placeholder="Enter a string">
+<button (click)="countCharacters()">Count Characters</button>
+<p *ngIf="count !== null">Character Count: {{ count }}</p>
