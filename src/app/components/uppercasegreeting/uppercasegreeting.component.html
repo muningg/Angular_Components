@@ -1,0 +1,7 @@
+<p>uppercasegreeting works!</p>
+<div>
+    <input [(ngModel)]="name" placeholder="Enter your name" />
+    <button (click)="generateUppercaseGreeting()">Generate Greeting</button>
+    <p *ngIf="greeting">{{ greeting }}</p>
+  </div>
+  
