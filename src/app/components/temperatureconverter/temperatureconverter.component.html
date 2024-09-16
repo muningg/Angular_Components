@@ -1,0 +1,7 @@
+<p>temperatureconverter works!</p>
+<input [(ngModel)]="temperature" placeholder="Enter temperature">
+<select [(ngModel)]="scale" (change)="convertTemperature()">
+  <option value="Celsius">Celsius to Fahrenheit</option>
+  <option value="Fahrenheit">Fahrenheit to Celsius</option>
+</select>
+<p *ngIf="convertedTemperature !== null">Converted Temperature: {{ convertedTemperature }}</p>
