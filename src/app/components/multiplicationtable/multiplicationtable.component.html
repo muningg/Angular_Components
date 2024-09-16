@@ -1,0 +1,6 @@
+<h1>Multiplication Table</h1>
+<input [(ngModel)]="number" placeholder="Enter a number">
+<button (click)="generateTable()">Generate Table</button>
+<ul>
+  <li *ngFor="let item of table">{{ item }}</li>
+</ul>
