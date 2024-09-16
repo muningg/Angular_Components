@@ -1,0 +1,8 @@
+<p>bmisolver works!</p>
+<div>
+  <input type="number" [(ngModel)]="height" placeholder="Height (cm)" />
+  <input type="number" [(ngModel)]="weight" placeholder="Weight (kg)" />
+  <button (click)="calculateBMI()">Calculate BMI</button>
+  <p *ngIf="bmi">BMI: {{ bmi | number:'1.2-2' }}</p>
+  <p *ngIf="bmiCategory">Category: {{ bmiCategory }}</p>
+</div>
