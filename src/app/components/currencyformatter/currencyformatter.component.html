@@ -1,0 +1,7 @@
+<p>currencyformatter works!</p>
+<div>
+    <input type="number" [(ngModel)]="amount" placeholder="Enter amount" />
+    <button (click)="formatCurrency()">Format Currency</button>
+    <p *ngIf="formattedAmount">Formatted Amount: {{ formattedAmount }}</p>
+  </div>
+  
