@@ -1,0 +1,4 @@
+<h1>Text Masker</h1>
+<input [(ngModel)]="text" placeholder="Enter text">
+<input type="checkbox" (change)="toggleMask($event)"> Show Text
+<p>{{ maskedText }}</p>
