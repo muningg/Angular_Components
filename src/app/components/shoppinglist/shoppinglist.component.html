@@ -1,0 +1,8 @@
+<p>shoppinglist works!</p>
+<input [(ngModel)]="item" placeholder="Enter an item">
+<button (click)="addItem()">Add Item</button>
+<ul>
+  <li *ngFor="let item of items">
+    {{ item }} <button (click)="removeItem(item)">Remove</button>
+  </li>
+</ul>
