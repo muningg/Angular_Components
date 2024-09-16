@@ -1,0 +1,4 @@
+<p>factorialcalculator works!</p>
+<input [(ngModel)]="number" placeholder="Enter a number">
+<button (click)="calculateFactorial()">Calculate Factorial</button>
+<p *ngIf="result !== null">Factorial: {{ result }}</p>
